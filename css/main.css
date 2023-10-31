@@ -17,12 +17,23 @@ body .container {
   transform: translate(-50%, -50%);
   border-radius: 15px;
   background-color: #1f252f;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .container__principalContainer {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 20px;
 }
-body .container .container__star {
+body .container .container__principalContainer.hide {
+  display: none;
+}
+body .container .container__principalContainer .container__star {
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -31,26 +42,26 @@ body .container .container__star {
   align-items: center;
   background-color: #293039;
 }
-body .container .container__star img {
+body .container .container__principalContainer .container__star img {
   width: 20px;
   height: 20px;
 }
-body .container .container__title {
+body .container .container__principalContainer .container__title {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 20px;
 }
-body .container .container__description {
+body .container .container__principalContainer .container__description {
   line-height: 1.8;
   color: #a5aab6;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
 }
-body .container .container__scores {
+body .container .container__principalContainer .container__scores {
   display: flex;
   justify-content: space-around;
 }
-body .container .container__scores .container__score {
+body .container .container__principalContainer .container__scores .container__score {
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -61,24 +72,60 @@ body .container .container__scores .container__score {
   align-items: center;
   cursor: pointer;
 }
-body .container .container__scores .container__score:hover {
+body .container .container__principalContainer .container__scores .container__score:hover {
   background-color: #7c8798;
   color: white;
 }
-body .container .container__scores .container__score.background_selection {
+body .container .container__principalContainer .container__scores .container__score.background_selection {
   background-color: #f57919;
   color: white;
 }
-body .container .container__button {
+body .container .container__principalContainer .container__button {
   background-color: #fc7613;
   border: none;
   color: white;
   border-radius: 30px;
   width: 100%;
-  height: 50px;
+  height: 38px;
   font-family: "Poppins", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
+}
+body .container .container__principalContainer .container__button:hover {
+  background-color: white;
+  color: #fc7613;
+}
+body .container .container__secondaryContainer {
+  background-color: #1f252f;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+}
+body .container .container__secondaryContainer .container__response {
+  color: #c06422;
+  background-color: #272e38;
+  padding: 8px;
+  border-radius: 20px;
+}
+body .container .container__secondaryContainer .container__description2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body .container .container__secondaryContainer .container__description2 h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+body .container .container__secondaryContainer .container__description2 p {
+  color: #a5aab6;
+  text-align: center;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */
